@@ -11,44 +11,38 @@
 </head>
 
 <body>
+    <h4 id="heading">Choose your animal to know it's human age :</h4>
+    <button type="reset" id="back" onclick="show();">back</button>
     <section>
-        <div>
-            <div>
-                <img src="./assets/img/lui-peng-708223-unsplash.jpg" alt="" > <br>
-                <div id="hidden">
-                    <label for="age">Age of your Dog :</label> <br>
-                    <input type="number" value="1" id="age1"> <br>
-                    <label>Click submit to get your dog's human age .</label> <br>
-                    <button type="submit" onclick="calculateAge(dog,age1);">Submit</button>
-                </div>
+        <div id="hide1">
+            <img src="./assets/img/lui-peng-708223-unsplash.jpg" onclick="hide(hide2,hide3,hidden1);"> <br>
+            <div id="hidden1">
+                <label for="age">Age of your Dog :</label> <br>
+                <input type="number" value="1" id="age1"> <br>
+                <label>Click submit to get your dog's human age .</label> <br>
+                <button type="submit" onclick="calculateAge(dog,age1);">Submit</button>
+                <p id="p1"></p>
             </div>
-            <p id="p1"></p>
         </div>
-        <div>
-            <div>
-                <img src="./assets/img/luke-stackpoole-678093-unsplash.jpg" alt="" > <br>
-                <div id="hidden">
-                    <label for="age">Age of your Cow :</label> <br>
-                    <input type="number" value="2" id="age1"> <br>
-                    <label for="">Click submit to get your cow's human age .</label> <br>
-                    <button type="submit" onclick="calculateAge(cow,age1);">Submit</button>
-                </div>
-
+        <div id="hide2">
+            <img src="./assets/img/luke-stackpoole-678093-unsplash.jpg" onclick="hide(hide1,hide3,hidden2);"> <br>
+            <div id="hidden2">
+                <label for="age">Age of your Cow :</label> <br>
+                <input type="number" value="2" id="age2"> <br>
+                <label for="">Click submit to get your cow's human age .</label> <br>
+                <button type="submit" onclick="calculateAge(cow,age2);">Submit</button>
+                <p id="p2"></p>
             </div>
-            <p id="p2"></p>
         </div>
-        <div>
-            <div>
-                <img src="./assets/img/yifeng-lu-1229617-unsplash.jpg" alt=""> <br>
-                <div id="hidden">
-                    <label for="age">Age of your Chinchilla :</label> <br>
-                    <input type="number" value="3" id="age1"> <br>
-                    <label for="">Click submit to get your chinchilla's human age .</label> <br>
-                    <button type="submit" onclick="calculateAge(chinchilla,age1);">Submit</button>
-                </div>
-
+        <div id="hide3">
+            <img src="./assets/img/yifeng-lu-1229617-unsplash.jpg" onclick="hide(hide1,hide2,hidden3);"> <br>
+            <div id="hidden3">
+                <label for="age">Age of your Chinchilla :</label> <br>
+                <input type="number" value="3" id="age3"> <br>
+                <label for="">Click submit to get your chinchilla's human age .</label> <br>
+                <button type="submit" onclick="calculateAge(chinchilla,age3);">Submit</button>
+                <p id="p3"></p>
             </div>
-            <p id="p3"></p>
         </div>
     </section>
 </body>
